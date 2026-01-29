@@ -1,0 +1,20 @@
+/*ALTER COLUMN
+ALTER COLUMN - Used to modify the properties of an exisitng column in a table
+Change Data Type: Modify the column´s data type; subject to compatibility between the old and new types
+SQL
+    ALTER TABLE table_name
+    ALTER COLUMN column_name TYPE new_data_type;
+* Limitations: Certain data types can´t be changed
+
+* Set/Change Default Value: Assign a default value to the column, which will be used for new rows if no value is specified
+SQL
+    ALTER TABLE table_name
+    ALTER COLUMN  column_name SET DEFAULT default_value;
+
+* Drop Default Value: Remove the default value from the column if one exists
+SQL
+    ALTER TABLE table_name
+    ALTER COLUMN column_name DROP DEFAULT;
+     */
+ALTER TABLE job_applied
+ALTER COLUMN contact_name TYPE TEXT;
